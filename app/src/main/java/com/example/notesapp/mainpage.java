@@ -76,9 +76,6 @@ public class mainpage extends AppCompatActivity {
             Uri personPhoto = acct.getPhotoUrl();
 
           username.setText("Hi "+personName+"!");
-            Glide.with(this)
-                    .load(String.valueOf(username))
-                    .into(usephoto);
 
 
         }
@@ -122,24 +119,6 @@ public class mainpage extends AppCompatActivity {
     public void create(View view){
          Intent intent = new Intent(this,notemake.class);
         startActivity(intent);
-       /** firestore.collection("Note Book").document(acct.getId()).collection("childnotes").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-
-                for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
-                    note note = documentSnapshot.toObject(note.class);
-                    note.setDocumentId(documentSnapshot.getId());
-                    notearray.add(note);
-                }
-                noteadapter noteadapter = new noteadapter(mainpage.this,notearray);
-                recyclerView.setAdapter(noteadapter);
-                LinearLayoutManager horizontalLayoutManagaer
-                        = new LinearLayoutManager(mainpage.this, LinearLayoutManager.VERTICAL, false);
-                recyclerView.setLayoutManager(horizontalLayoutManagaer);
-            }
-        });**/
-
-
     }
 
     public void search(View view){

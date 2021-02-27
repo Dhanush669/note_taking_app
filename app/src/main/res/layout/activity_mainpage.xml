@@ -44,6 +44,7 @@
             android:layout_height="45dp"
             android:layout_gravity="right|center_vertical"
             android:layout_marginRight="20dp"
+            android:src="@drawable/ic_settings"
             android:onClick="setting"/>
 
 
