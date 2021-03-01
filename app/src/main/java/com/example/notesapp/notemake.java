@@ -42,4 +42,7 @@ public class notemake extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    public void share(View view){
+
+    }
 }

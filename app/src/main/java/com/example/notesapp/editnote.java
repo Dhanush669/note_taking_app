@@ -57,7 +57,13 @@ public class editnote extends AppCompatActivity {
     }
 
     public void sharenote(View view){
-        backbutton();
+        Intent share=new Intent(Intent.ACTION_SEND);
+        String title,desc,note;
+        note="Title :\n"+notetitle.getText().toString()+"\n"+"Description :\n"+notedesc.getText().toString();
+        share.putExtra(Intent.EXTRA_TEXT,note);
+        share.setType("text/plain");
+        startActivity(share);
+
     }
     public void backtohomepage(View view){
        backbutton();

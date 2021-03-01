@@ -43,7 +43,7 @@
 
         app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -68,6 +68,7 @@
             android:hint="description"
             android:singleLine="false" />
     </androidx.cardview.widget.CardView>
+
 
 
     <androidx.cardview.widget.CardView
